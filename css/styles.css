@@ -1,0 +1,506 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* font-family: monospace; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+    --PALESKY: #677984;
+    --ABBEY: #48484a;
+    --DUSTYGRAY: #969696;
+    --DOVEGRAY: #656565;
+    --SHIPGRAY: #434244;
+    --WHITE: #fff;
+    --SILVER: #c4c4c4;
+    --MERCURY: #e5e5e5;
+    --CORDUROY: #626463;
+
+
+}
+
+body {
+    background-color: var(--ABBEY);
+    height: 3000px;
+    width: 100vw;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h2 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 15px;
+    align-items: start;
+    text-transform: uppercase;
+    display: grid;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+p {
+    font-size: 12px;
+    display: grid;
+    font-style: normal;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.school {
+    text-transform: uppercase;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+small {
+    font-size: 10px;
+    display: grid;
+    overflow-wrap: normal;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.container {
+    background-color: var(--ABBEY);
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    grid-template-areas: "sidebar main";
+}
+
+.sidecontent {
+    background-color: var(--SHIPGRAY);
+    color: var(--WHITE);
+    grid-area: sidebar;
+    display: grid;
+    grid-template-rows: 200px 3fr 3fr;
+    grid-template-areas: "logo" "port" "edu";
+}
+
+.maincontent {
+    background-color: var(--WHITE);
+    color: var(--DOVEGRAY);
+    grid-area: main;
+    display: grid;
+    grid-template-rows: repeat(2, 150px) repeat(2, 1fr);
+    width: 65vw;
+    padding-top: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.logo {
+    display: grid;
+    grid-row: 1;
+    place-content: center;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.port {
+    display: grid;
+    grid-area: port;
+    grid-template-rows: repeat(24, 1fr);
+    grid-template-areas: "prt" "det" "age" "db" "gen" "cit" "stt" "rlg" "hgt";
+
+}
+
+.prt {
+    grid-area: prt;
+    grid-row: 1 / 2;
+}
+
+.prt1 {
+    grid-row: 2;
+}
+
+.det {
+    grid-row: 4;
+}
+
+
+.age {
+    grid-area: age;
+    grid-row: 6;
+}
+
+.age1 {
+    grid-row: 7;
+}
+
+.dob {
+    grid-area: db;
+    /* grid-area: db; */
+    grid-row: 9;
+}
+
+.dob1 {
+    grid-row: 10;
+}
+
+.sex {
+    grid-area: gen;
+    grid-row: 12;
+}
+
+.sex1 {
+    grid-row: 13;
+}
+
+.citizen {
+    grid-area: cit;
+    grid-row: 15;
+}
+
+.citizen1 {
+    grid-row: 16;
+}
+
+.stat {
+    grid-area: stt;
+    grid-row: 18;
+}
+
+.stat1 {
+    grid-row: 19;
+}
+
+.rel {
+    grid-area: rlg;
+    grid-row: 21;
+}
+
+.rel1 {
+    grid-row: 22;
+}
+
+.height {
+    grid-area: hgt;
+    grid-row: 24;
+}
+
+.height1 {
+    grid-row: 25;
+}
+
+.edu {
+    display: grid;
+    grid-area: edu;
+    grid-template-rows: repeat(30, 1fr);
+    grid-template-areas: "ed" "shl1" "shl2" "shl3" "shl4";
+    justify-content: center;
+}
+
+.ed {
+    display: grid;
+    grid-area: ed;
+    grid-row: 5;
+}
+
+.one {
+    grid-area: shl1;
+    grid-row: 7;
+}
+
+.two {
+    grid-area: shl2;
+    grid-row: 12;
+}
+
+.three {
+    grid-area: shl3;
+    grid-row: 17;
+}
+
+.four {
+    grid-area: shl4;
+    grid-row: 23;
+}
+
+.lvl1 {
+    grid-row: 8;
+}
+
+.lvl2 {
+    grid-row: 13;
+}
+
+.lvl3 {
+    grid-row: 18;
+}
+
+.lvl4 {
+    grid-row: 24;
+}
+
+.date1 {
+    grid-row: 9;
+}
+
+.date2 {
+    grid-row: 14;
+}
+
+.date3 {
+    grid-row: 19;
+}
+
+.date4 {
+    grid-row: 25;
+}
+
+.schl1 {
+    grid-row: 10;
+}
+
+.schl2 {
+    grid-row: 15;
+}
+
+.schl3 {
+    grid-row: 20;
+}
+
+.schl4 {
+    grid-row: 26;
+}
+
+.crs3 {
+    grid-row: 21;
+}
+
+.crs4 {
+    grid-row: 27;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: [row-start] 50px [row-2] 20px [row-3] 20px [row-end];
+    border-bottom: 1px solid var(--SILVER);
+}
+
+.header p {
+    font-size: 14px;
+}
+
+.name {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.pos {
+    grid-row: 2;
+    padding-left: 0;
+}
+
+.info {
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.email {
+    grid-row: 2;
+    grid-column: 2;
+
+}
+
+.contact {
+    grid-column: 2;
+    grid-row: 3;
+
+}
+
+.obj {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 20px;
+    border-bottom: 1px solid var(--SILVER);
+}
+
+.objc {
+    font-size: 15px;
+}
+
+.proj {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: [row-start] 50px repeat(13, 50px);
+    border-bottom: 1px solid var(--SILVER);
+    column-rule: 3px double var(--SILVER);
+    justify-content: start;
+    color: var(--DOVEGRAY);
+}
+
+.proj p {
+    padding-left: 0;
+    font-size: 13px;
+}
+
+.hand {
+    grid-column: 1;
+}
+
+.role, .desc, .soft, .use{
+    grid-column: 2;
+}
+
+.dpc{
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#p1 {
+    grid-row: 3;
+    font-size: 12px;
+}
+
+#r1 {
+    grid-row: 2;
+}
+#d1 {
+    grid-row: 3;
+}
+
+#s1 {
+    grid-row: 4;
+}
+
+#u1 {
+    grid-row: 5;
+}
+
+.d404 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+#p2 {
+    grid-row: 7;
+    font-size: 12px;
+}
+
+#r2 {
+    grid-row: 6;
+}
+
+#d2 {
+    grid-row: 7;
+}
+
+#s2 {
+    grid-row: 8;
+}
+
+#u2 {
+    grid-row: 9;
+}
+
+.pers{
+    grid-column: 1;
+    grid-row: 10;
+}
+
+#p3 {
+    grid-row: 11;
+    font-size: 12px;
+}
+
+#r3 {
+    grid-row: 10;
+}
+
+#d3 {
+    grid-row: 11;
+}
+
+#s3 {
+    grid-row: 12;
+}
+
+#u3 {
+    grid-row: 13;
+}
+
+.skill {
+    display: grid;
+    margin-top: 10px;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(8, 30px);
+    align-items: center;
+    color: var(--DOVEGRAY);
+}
+
+.perc {
+    width: 60%;
+    height: 5px;
+    background-color: var(--CORDUROY);
+    
+}
+
+.bar {
+    width: 90%;
+    height: 5px;
+    background-color: var(--MERCURY);
+}
+
+#b1{
+    grid-row: 2;
+    grid-column: 2;
+}
+
+#b2{
+    grid-column: 2;
+    grid-row: 4;
+}
+
+#b3{
+    grid-column: 2;
+    grid-row: 6;
+}
+
+#b4{
+    grid-column: 2;
+    grid-row: 8;
+}
+
+.web{
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.os{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+.edit{
+    grid-row: 5;
+    grid-column: 2;
+}
+
+.pc{
+    grid-row: 7;
+    grid-column: 2;
+}
